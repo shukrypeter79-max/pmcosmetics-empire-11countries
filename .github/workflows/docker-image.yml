@@ -1,0 +1,14 @@
+name: Docker Image CI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  disabled-template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disabled unrelated template
+        run: echo "Docker template disabled; PM Cosmetics Hub CI is the canonical validation path."

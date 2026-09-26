@@ -1,0 +1,16 @@
+# Alibaba Cloud template intentionally disabled for PM Cosmetics Hub.
+# The production runtime is deployed through Railway.
+name: Build and Deploy to ACK
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  disabled-template:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disabled unrelated template
+        run: echo "Alibaba Cloud/ACK template disabled; Railway is the active deployment target."

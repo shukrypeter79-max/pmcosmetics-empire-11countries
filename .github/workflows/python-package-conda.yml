@@ -1,0 +1,17 @@
+name: Python Package using Conda
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Workflow intentionally disabled
+        run: |
+          echo "Python/Conda template is not part of the PM Cosmetics Hub Node.js runtime."
+          echo "Use PM Cosmetics Hub CI for build, validation, and tests."
